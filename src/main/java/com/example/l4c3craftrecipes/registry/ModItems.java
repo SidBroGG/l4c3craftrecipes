@@ -15,7 +15,7 @@ public final class ModItems {
             ITEMS.registerItem("vitamix_cherry", properties ->
                     new VitamixItem(
                             properties,
-                            new MobEffectInstance(MobEffects.WITHER, 30)
+                            new MobEffectInstance(MobEffects.WITHER, 30 * 20)
                     )
             );
 
@@ -23,7 +23,7 @@ public final class ModItems {
             ITEMS.registerItem("vitamix_apple_grape", properties ->
                     new VitamixItem(
                             properties,
-                            new MobEffectInstance(MobEffects.REGENERATION, 5, 3)
+                            new MobEffectInstance(MobEffects.REGENERATION, 5 * 20, 3)
                     )
             );
 
@@ -31,7 +31,7 @@ public final class ModItems {
             ITEMS.registerItem("vitamix_multifruit", properties ->
                     new VitamixItem(
                             properties,
-                            new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 30)
+                            new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 30 * 20)
                     )
             );
 
