@@ -37,7 +37,7 @@ public final class ModItems {
                     )
             );
 
-    private static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK_ITEM =
+    public static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem(ModBlocks.ROTTEN_FLESH_BLOCK);
 
     private ModItems() {

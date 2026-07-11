@@ -29,5 +29,8 @@ public class L4C3CraftRecipes {
             event.accept(ModItems.VITAMIX_APPLE_GRAPE.value());
             event.accept(ModItems.VITAMIX_MULTIFRUIT.value());
         }
+        if (event.getTabKey().equals(CreativeModeTabs.FUNCTIONAL_BLOCKS)) {
+            event.accept(ModItems.ROTTEN_FLESH_BLOCK_ITEM.value());
+        }
     }
 }

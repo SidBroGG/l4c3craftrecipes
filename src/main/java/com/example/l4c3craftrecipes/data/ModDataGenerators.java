@@ -12,6 +12,7 @@ public class ModDataGenerators {
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();
 
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(output, event.getExistingFileHelper()));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(output, event.getExistingFileHelper()));
         generator.addProvider(event.includeClient(), new ModEnglishLanguageProvider(output));
     }
