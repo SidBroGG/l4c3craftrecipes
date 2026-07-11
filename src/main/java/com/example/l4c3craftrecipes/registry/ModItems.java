@@ -4,6 +4,7 @@ import com.example.l4c3craftrecipes.L4C3CraftRecipes;
 import com.example.l4c3craftrecipes.item.VitamixItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -35,6 +36,9 @@ public final class ModItems {
                             new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 30 * 20)
                     )
             );
+
+    private static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK_ITEM =
+            ITEMS.registerSimpleBlockItem(ModBlocks.ROTTEN_FLESH_BLOCK);
 
     private ModItems() {
     }

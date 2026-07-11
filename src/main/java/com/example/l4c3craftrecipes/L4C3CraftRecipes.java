@@ -1,6 +1,7 @@
 package com.example.l4c3craftrecipes;
 
 import com.example.l4c3craftrecipes.data.ModDataGenerators;
+import com.example.l4c3craftrecipes.registry.ModBlocks;
 import com.example.l4c3craftrecipes.registry.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
@@ -16,6 +17,7 @@ public class L4C3CraftRecipes {
 
     public L4C3CraftRecipes(IEventBus modEventBus, ModContainer modContainer) {
         ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
 
         modEventBus.addListener(this::addCreativeTabItems);
         modEventBus.addListener(ModDataGenerators::gatherData);
