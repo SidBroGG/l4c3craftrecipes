@@ -13,9 +13,7 @@ public final class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlockWithItem(
-                ModBlocks.ROTTEN_FLESH_BLOCK.value(),
-                cubeAll(ModBlocks.ROTTEN_FLESH_BLOCK.value())
-        );
+        simpleBlockWithItem(ModBlocks.ROTTEN_FLESH_BLOCK.value(), cubeAll(ModBlocks.ROTTEN_FLESH_BLOCK.value()));
+        simpleBlockWithItem(ModBlocks.MATVEY_BLOCK.value(), cubeAll(ModBlocks.MATVEY_BLOCK.value()));
     }
 }

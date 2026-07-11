@@ -18,5 +18,6 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
         add(ModItems.VITAMIX_MULTIFRUIT.value(), "Vitamix Multifruit");
 
         add(ModBlocks.ROTTEN_FLESH_BLOCK.value(), "Rotten Flesh Block");
+        add(ModBlocks.MATVEY_BLOCK.value(), "Matvey Block");
     }
 }

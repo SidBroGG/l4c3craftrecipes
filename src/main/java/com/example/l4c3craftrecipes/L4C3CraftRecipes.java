@@ -31,6 +31,7 @@ public class L4C3CraftRecipes {
         }
         if (event.getTabKey().equals(CreativeModeTabs.FUNCTIONAL_BLOCKS)) {
             event.accept(ModItems.ROTTEN_FLESH_BLOCK_ITEM.value());
+            event.accept(ModItems.MATVEY_BLOCK_ITEM.value());
         }
     }
 }

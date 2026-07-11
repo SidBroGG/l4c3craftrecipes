@@ -14,6 +14,9 @@ public final class ModBlocks {
     public static final DeferredHolder<Block, Block> ROTTEN_FLESH_BLOCK =
             BLOCKS.registerSimpleBlock("rotten_flesh_block", BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK));
 
+    public static final DeferredHolder<Block, Block> MATVEY_BLOCK =
+            BLOCKS.registerSimpleBlock("matvey_block", BlockBehaviour.Properties.ofFullCopy(Blocks.CARVED_PUMPKIN));
+
     private ModBlocks() {
     }
 }
