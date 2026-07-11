@@ -15,6 +15,8 @@ public class L4C3CraftRecipes {
     public static final String MODID = "l4c3craftrecipes";
 
     public L4C3CraftRecipes(IEventBus modEventBus, ModContainer modContainer) {
+        ModItems.ITEMS.register(modEventBus);
+
         modEventBus.addListener(this::addCreativeTabItems);
         modEventBus.addListener(ModDataGenerators::gatherData);
     }
