@@ -15,7 +15,8 @@ public final class ModItems {
             ITEMS.registerItem("vitamix_cherry", properties ->
                     new VitamixItem(
                             properties,
-                            new MobEffectInstance(MobEffects.WITHER, 30 * 20)
+                            new MobEffectInstance(MobEffects.WITHER, 30 * 20),
+                            new MobEffectInstance(MobEffects.CONFUSION, 30 * 20)
                     )
             );
 
