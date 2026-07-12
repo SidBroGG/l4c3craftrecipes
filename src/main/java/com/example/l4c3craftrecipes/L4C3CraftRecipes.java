@@ -33,5 +33,8 @@ public class L4C3CraftRecipes {
             event.accept(ModItems.ROTTEN_FLESH_BLOCK_ITEM.value());
             event.accept(ModItems.MATVEY_BLOCK_ITEM.value());
         }
+        if (event.getTabKey().equals(CreativeModeTabs.REDSTONE_BLOCKS)) {
+            event.accept(ModItems.BEDROCK_BOAT_ITEM.value());
+        }
     }
 }

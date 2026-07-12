@@ -1,6 +1,7 @@
 package com.example.l4c3craftrecipes.registry;
 
 import com.example.l4c3craftrecipes.L4C3CraftRecipes;
+import com.example.l4c3craftrecipes.item.BedrockBoatItem;
 import com.example.l4c3craftrecipes.item.VitamixItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -42,6 +43,9 @@ public final class ModItems {
 
     public static final DeferredHolder<Item, BlockItem> MATVEY_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem(ModBlocks.MATVEY_BLOCK);
+
+    public static final DeferredHolder<Item, BedrockBoatItem> BEDROCK_BOAT_ITEM =
+            ITEMS.registerItem("bedrock_boat_item", BedrockBoatItem::new);
 
     private ModItems() {
     }
