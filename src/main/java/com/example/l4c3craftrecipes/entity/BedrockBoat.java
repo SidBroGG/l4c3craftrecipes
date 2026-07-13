@@ -1,5 +1,6 @@
 package com.example.l4c3craftrecipes.entity;
 
+import com.example.l4c3craftrecipes.registry.ModEntities;
 import com.example.l4c3craftrecipes.registry.ModItems;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.entity.EntityType;
@@ -15,7 +16,11 @@ public class BedrockBoat extends Boat {
     }
 
     public BedrockBoat(Level level, double x, double y, double z) {
-        super(level, x, y, z);
+        super(ModEntities.BEDROCK_BOAT.get(), level);
+        this.setPos(x, y, z);
+        this.xo = x;
+        this.yo = y;
+        this.zo = z;
     }
 
     @Override

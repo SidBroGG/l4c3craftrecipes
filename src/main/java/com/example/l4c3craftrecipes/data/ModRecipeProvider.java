@@ -73,6 +73,27 @@ public final class ModRecipeProvider extends RecipeProvider {
                 .save(output);
     }
 
+    private static void recipe_matvey_block(RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MATVEY_BLOCK_ITEM.value())
+                .pattern("RRR")
+                .pattern("RCR")
+                .pattern("RRR")
+                .define('R', ModItems.ROTTEN_FLESH_BLOCK_ITEM.value())
+                .define('C', Items.COCOA_BEANS)
+                .unlockedBy("has_cocoa_bean", has(Items.COCOA_BEANS))
+                .save(output);
+    }
+
+    private static void recipe_bedrock_boat(RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BEDROCK_BOAT_ITEM.value())
+                .pattern("M")
+                .pattern("V")
+                .define('M', ModItems.MATVEY_BLOCK_ITEM.value())
+                .define('V', ModItems.VITAMIX_CHERRY.value())
+                .unlockedBy("has_matvey_block", has(ModItems.MATVEY_BLOCK_ITEM.value()))
+                .save(output);
+    }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
         recipe_rotten_flesh(output);
@@ -81,5 +102,8 @@ public final class ModRecipeProvider extends RecipeProvider {
         recipe_vitamix_multifruit(output);
         recipe_vitamix_apple_grape(output);
         recipe_vitamix_cherry(output);
+
+        recipe_matvey_block(output);
+        recipe_bedrock_boat(output);
     }
 }

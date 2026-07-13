@@ -22,7 +22,7 @@ public class ClientModEvents {
     private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.BEDROCK_BOAT.get(), context -> new BoatRenderer(context, false) {
             private final Pair<ResourceLocation, ListModel<Boat>> bedrockBoatResources = Pair.of(
-                    ResourceLocation.fromNamespaceAndPath(L4C3CraftRecipes.MODID, "textures/entity/boat/bedrock_boat.png"),
+                    ResourceLocation.fromNamespaceAndPath(L4C3CraftRecipes.MODID, "textures/entity/bedrock_boat.png"),
                     new BoatModel(context.bakeLayer(ModelLayers.createBoatModelName(Boat.Type.OAK)))
             );
 
