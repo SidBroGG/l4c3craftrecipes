@@ -7,6 +7,7 @@ import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.material.FluidState;
+import org.jetbrains.annotations.NotNull;
 
 public class BedrockBoat extends Boat {
     public BedrockBoat(EntityType<? extends Boat> type, Level level) {
@@ -18,7 +19,7 @@ public class BedrockBoat extends Boat {
     }
 
     @Override
-    public Item getDropItem() {
+    public @NotNull Item getDropItem() {
         return ModItems.BEDROCK_BOAT_ITEM.get();
     }
 

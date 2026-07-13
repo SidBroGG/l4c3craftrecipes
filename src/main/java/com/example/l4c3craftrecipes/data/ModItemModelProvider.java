@@ -16,5 +16,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.VITAMIX_CHERRY.value());
         basicItem(ModItems.VITAMIX_APPLE_GRAPE.value());
         basicItem(ModItems.VITAMIX_MULTIFRUIT.value());
+        basicItem(ModItems.BEDROCK_BOAT_ITEM.value());
     }
 }

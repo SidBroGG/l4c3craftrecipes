@@ -42,7 +42,7 @@ public class BedrockBoatItem extends Item {
         if (!entityList.isEmpty()) {
             Vec3 eyePos = player.getEyePosition();
             for (var entity : entityList) {
-                AABB aabb = entity.getBoundingBox().inflate((double) entity.getPickRadius());
+                AABB aabb = entity.getBoundingBox().inflate(entity.getPickRadius());
                 if (aabb.contains(eyePos)) {
                     return InteractionResultHolder.pass(itemStack);
                 }
